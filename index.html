@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        h1              {margin-bottom: 30px;}
+        label           {font-weight: bold;}
+        input, select   {margin-bottom: 10px;}
+        form            {width: 30%; padding: 20px;}
+    </style>
+</head>
+<body class="m-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        <div class="form-group">
+            <label for="employeeId">8-Digit Employee ID</label>
+            <input type="text" class="form-control" id="employeeId" aria-describedby="employeeIdHelp" required="required" maxlength="8">
+            <small id="employeeIdHelp" class="form-text text-muted">Please fill out this field.</small>
+        </div>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" required="required">
+            <small id="fullNameHelp" class="form-text text-muted">Please fill out this field.</small>
+        </div>
+        <div class="form-group">
+            <label for="extension">4-Digit Extension</label>
+            <input type="text" class="form-control" id="extension" aria-describedby="extensionHelp" required="required" maxlength="4">
+            <small id="extensionHelp" class="form-text text-muted">Please fill out this field.</small>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required="required">
+            <small id="emailHelp" class="form-text text-muted">Please fill out this field.</small>
+        </div>
+        <select class="form-select" aria-label="Department" required="required">
+            <option selected disabled value="">Select Department</option>
+            <option value="1">Administrative</option>
+            <option value="2">Engineering</option>
+            <option value="3">Executive</option>
+            <option value="4">Marketing</option>
+            <option value="5">Quality Assurance</option>
+            <option value="6">Sales</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Add Employee</button>
+    </form>
+</body>
+</html>
