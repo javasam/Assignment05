@@ -20,33 +20,24 @@
         <div class="form-group">
             <label for="employeeId">8-Digit Employee ID</label>
             <input type="text" class="form-control" id="employeeId" aria-describedby="employeeIdHelp" required="required" maxlength="8">
-            <small id="employeeIdHelp" class="form-text text-muted">Please fill out this field.</small>
-        </div>
-        <div class="form-group">
             <label for="fullName">Full Name</label>
             <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" required="required">
-            <small id="fullNameHelp" class="form-text text-muted">Please fill out this field.</small>
-        </div>
-        <div class="form-group">
             <label for="extension">4-Digit Extension</label>
             <input type="text" class="form-control" id="extension" aria-describedby="extensionHelp" required="required" maxlength="4">
-            <small id="extensionHelp" class="form-text text-muted">Please fill out this field.</small>
-        </div>
-        <div class="form-group">
             <label for="inputEmail">Email address</label>
             <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required="required">
-            <small id="emailHelp" class="form-text text-muted">Please fill out this field.</small>
-        </div>
-        <select class="form-select" aria-label="Department" required="required">
+
+        <select class="form-select" id="department" aria-label="Department" required="required">
             <option selected disabled value="">Select Department</option>
-            <option value="1">Administrative</option>
-            <option value="2">Engineering</option>
-            <option value="3">Executive</option>
-            <option value="4">Marketing</option>
-            <option value="5">Quality Assurance</option>
-            <option value="6">Sales</option>
+            <option value="Administrative">Administrative</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Executive">Executive</option>
+            <option value="Marketing">Marketing</option>
+            <option value="uality Assurance">Quality Assurance</option>
+            <option value="Sales">Sales</option>
         </select>
         <button type="submit" class="btn btn-primary">Add Employee</button>
+        </div>
     </form>
 </body>
 </html>
